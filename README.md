@@ -1,3 +1,4 @@
-#Hello world
+# Environment
 
-1. docker volume create --name peppermint
+1. create volume: docker volume create --name peppermint
+2. run docker-compose up -d
