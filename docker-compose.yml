@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  env:
+    image: node:12.18.3-slim
+    stdin_open: true
+    tty: true
+    volumes:
+      - ".:/app"
+  
+  server:
+    image: node:12.18.3-slim
+    volumes:
+      - ".:/app:ro"
+      - "peppermint:/src"
+    ports:
+      - "3000:3000"
+
+#  jenkins:
+#    image: jenkins/jenkins:lts
+#    ports:
+#      - "8080:8080"
+#      - "50000:50000"
+#    volumes:
+#      - "peppermint:/var/jenkins_home"
+#
+#  sonar:
+#    image: sonarqube
+    
+volumes:
+  peppermint:
+    external: true
