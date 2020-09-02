@@ -1,0 +1,26 @@
+{
+  "name": "peppermint",
+  "version": "0.1.0",
+  "description": "framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jccabral/peppermint.git"
+  },
+  "keywords": [],
+  "author": "Juan Cruz Cabral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jccabral/peppermint/issues"
+  },
+  "homepage": "https://github.com/jccabral/peppermint#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
